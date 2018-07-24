@@ -10,6 +10,7 @@ import Footernav from '@/components/Footernav'
 import tianmao from '@/components/tianmao'
 import jd from '@/components/jd'
 import yamaxun from '@/components/yamaxun'
+import prodec from '@/components/prodec'
 
 Vue.use(Router)
 
@@ -45,6 +46,13 @@ export default new Router({
       name: 'yamaxun',
       components: {
         default: yamaxun,
+      }
+    },
+    {
+      path: '/prodec',
+      name: 'prodec',
+      components: {
+        default: prodec,
       }
     }
   ]

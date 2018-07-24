@@ -1,7 +1,7 @@
 <template>
   <div class="pro_container_styleb">
     <div class="contain_styleb">
-      <a href="">
+      <router-link to="/prodec">
         <div class="relative_pos">
           <div>
             <img src="../assets/pro_tm_a.jpg" alt="" />
@@ -9,10 +9,10 @@
           <div>OSTER®奥士达Versa调理器</div>
           <div>深度搅拌</div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div class="contain_styleb">
-      <a href="">
+      <router-link to="/prodec">
         <div class="relative_pos">
           <div>
             <img src="../assets/pro_tm_b.jpg" alt="" />
@@ -20,10 +20,10 @@
           <div>OSTER®奥士达MyBlend®随身搅拌器</div>
           <div>深度搅拌</div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div class="contain_styleb">
-      <a href="">
+      <router-link to="/prodec">
         <div class="relative_pos">
           <div>
             <img src="../assets/pro_tm_c.jpg" alt="" />
@@ -31,10 +31,10 @@
           <div>OSTER®奥士达全金属经典搅拌器</div>
           <div>完美碎冰</div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div class="contain_styleb">
-      <a href="">
+      <router-link to="/prodec">
         <div class="relative_pos">
           <div>
             <img src="../assets/pro_tm_d.jpg" alt="" />
@@ -42,10 +42,10 @@
           <div>OSTER®奥士达铁人搅拌器</div>
           <div>炫酷运动</div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div class="contain_styleb">
-      <a href="">
+      <router-link to="/prodec">
         <div class="relative_pos">
           <div>
             <img src="../assets/pro_tm_e.jpg" alt="" />
@@ -53,10 +53,10 @@
           <div>OSTER®奥士达Ball®梅森杯搅拌器</div>
           <div>迷你时尚</div>
         </div>
-      </a>
+      </router-link>
     </div>
     <div class="contain_styleb">
-      <a href="">
+      <router-link to="/prodec">
         <div class="relative_pos">
           <div>
             <img src="../assets/pro_tm_f.jpg" alt="" />
@@ -64,8 +64,9 @@
           <div>OSTER®奥士达随身搅拌器</div>
           <div>颜值担当</div>
         </div>
-      </a>
+      </router-link>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
