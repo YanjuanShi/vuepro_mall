@@ -1,7 +1,7 @@
 <template>
     <div class="prodec">
       <HeaderLogo></HeaderLogo>
-      <HelloWorld></HelloWorld>
+      <HelloWorld :navactive = "itemNum"></HelloWorld>
       <div class="prodecList text-left">
         <!--查看产品图片-->
         <div class="lookpro">
@@ -40,6 +40,8 @@
               <div>杯身可用于洗碗机清洗</div>
               <div>轻轻按压即可开始搅拌（不再需要开关电源键）</div>
               <div>Tritan杯身， 不含双酚A材质</div>
+              <div class="col_9_style">浏览：{{shareTime}}次</div>
+              <share @shared = "fooshare"></share>
             </div>
             <div class="fgline"></div>
             <div class="btnandicon">
@@ -173,13 +175,26 @@
   import HeaderLogo from './header'
   import Prolist from './prolist'
   import Footernav from './footernav'
+  import share from './share'
   export default {
     name: "prodec",
     components:{
       HelloWorld,
       HeaderLogo,
       Prolist,
-      Footernav
+      Footernav,
+      share
+    },
+    methods:{
+      fooshare(){
+        this.shareTime++;
+      }
+    },
+    data:function () {
+      return{
+        shareTime:1,
+        itemNum:1
+      }
     }
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view name = "header"></router-view>
-    <router-view></router-view>
+    <router-view :navactive = "itemNum"></router-view>
     <router-view name = "banner"></router-view>
     <router-view name = "prolist"></router-view>
     <router-view name = "footernav"></router-view>
@@ -10,7 +10,12 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data:function () {
+    return{
+      itemNum:0
+    }
+  }
 }
 </script>
 

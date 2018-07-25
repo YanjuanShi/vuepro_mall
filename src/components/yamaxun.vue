@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderLogo></HeaderLogo>
-    <HelloWorld></HelloWorld>
+    <HelloWorld :navactive = "itemNum"></HelloWorld>
     <div class="ejnanv">{{title}}</div>
     <Prolist></Prolist>
     <Footernav></Footernav>
@@ -24,7 +24,8 @@
     },
     data:function () {
       return{
-        title:'亚马逊'
+        title:'亚马逊',
+        itemNum:3
       }
     }
   }
