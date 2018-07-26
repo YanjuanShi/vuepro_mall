@@ -1,7 +1,7 @@
 <template>
     <div class="prodec">
       <HeaderLogo></HeaderLogo>
-      <HelloWorld :navactive = "itemNum"></HelloWorld>
+      <Navbar :navactive = "itemNum"></Navbar>
       <div class="prodecList text-left">
         <!--查看产品图片-->
         <div class="lookpro">
@@ -171,7 +171,7 @@
 </template>
 
 <script>
-  import HelloWorld from './navbar'
+  import Navbar from './navbar'
   import HeaderLogo from './header'
   import Prolist from './prolist'
   import Footernav from './footernav'
@@ -179,7 +179,7 @@
   export default {
     name: "prodec",
     components:{
-      HelloWorld,
+      Navbar,
       HeaderLogo,
       Prolist,
       Footernav,

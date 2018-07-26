@@ -3,8 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueLazyload from 'vue-lazyload'
+
 
 Vue.config.productionTip = false
+
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: '../static/images/loading.gif',
+  loading: '../static/images/loading.gif',
+  attempt: 1
+})
 
 /* eslint-disable no-new */
 new Vue({
@@ -13,3 +22,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+

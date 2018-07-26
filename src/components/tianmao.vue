@@ -1,15 +1,15 @@
 <template>
   <div>
     <HeaderLogo></HeaderLogo>
-    <HelloWorld :navactive = "itemNum"></HelloWorld>
+    <navbar :navactive = "itemNum"></navbar>
     <div class="ejnanv">{{title}}</div>
-    <Prolist></Prolist>
+    <Prolist :jsonsrc = "getjsonsrc"></Prolist>
     <Footernav></Footernav>
   </div>
 </template>
 
 <script>
-    import HelloWorld from './navbar'
+    import Navbar from './navbar'
     import HeaderLogo from './header'
     import Prolist from './prolist'
     import Footernav from './footernav'
@@ -17,7 +17,7 @@
     export default {
         name: "tianmao",
         components:{
-          HelloWorld,
+          Navbar,
           HeaderLogo,
           Prolist,
           Footernav
@@ -25,7 +25,8 @@
         data:function () {
           return{
             title:'天猫超市',
-            itemNum:1
+            itemNum:1,
+            getjsonsrc:'http://192.168.3.165:8080/json/tmlist.json'
           }
         }
     }

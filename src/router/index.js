@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/navbar'
-import HeaderLogo from '@/components/Header'
+import Navbar from '@/components/navbar'
+import HeaderLogo from '@/components/header'
 import Banner from '@/components/banner'
 import Prolist from '@/components/prolist'
-import Footernav from '@/components/Footernav'
+import Footernav from '@/components/footernav'
 
 /*页面*/
 import tianmao from '@/components/tianmao'
@@ -18,12 +18,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
+      name: 'navbar',
       components: {
-        default: HelloWorld,
+        default: Navbar,
         header: HeaderLogo,
         banner: Banner,
         prolist: Prolist,
+        prolistb: Prolist,
+        prolistc: Prolist,
         footernav:Footernav
       }
     },

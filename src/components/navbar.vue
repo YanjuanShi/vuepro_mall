@@ -7,13 +7,13 @@
       <li :class = "{active:navactive == 3}"> <router-link to="/yamaxun">亚马逊</router-link> </li>
       <div class="clear"></div>
     </ul>
-    <router-view></router-view>
+    <!--<router-view></router-view>-->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'navbar',
   props:['navactive'],
   data () {
     return {
